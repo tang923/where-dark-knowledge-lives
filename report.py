@@ -1,5 +1,3 @@
-"""读取 result.json，生成原始表、均值/标准差、配对差值与可直接用于报告的图。"""
-
 import argparse
 import csv
 import hashlib
@@ -24,7 +22,6 @@ def write_csv(path, rows):
 
 def protocol_key(result):
     cfg = result["config"]
-    # 只有实验方法/种子不同才有资格放进同一比较，杜绝混入不同训练预算。
     keys = ("dataset", "model", "profile", "comparison", "epochs", "batch_size", "lr", "momentum",
             "weight_decay", "milestones", "gamma", "split_seed", "omit", "selection", "warmup",
             "train_limit", "eval_limit", "deterministic")
@@ -48,7 +45,6 @@ def summarize(root, output=None):
     for result in results:
         cfg, test = result["config"], result["test"]
         protocol = protocol_key(result)
-        # 同名 variant 仍按实际损失参数分组，不能把不同 T/beta 的 seed 合并。
         settings = tuple(cfg[k] for k in ("temperature", "alpha", "beta", "ce_weight", "distill_weight"))
         key = (protocol, cfg["variant"], settings)
         groups.setdefault(key, []).append(result)
@@ -149,7 +145,7 @@ def summarize(root, output=None):
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description="Summarize experiment results and generate figures.")
     parser.add_argument("--root", default="runs/full")
     parser.add_argument("--output")
     args = parser.parse_args()

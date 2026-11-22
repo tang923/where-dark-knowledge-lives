@@ -1,5 +1,3 @@
-"""固定、分层的 train/validation 划分；测试集不参与训练和超参数选择。"""
-
 import hashlib
 import random
 
@@ -85,7 +83,6 @@ def seed_worker(worker_id):
 
 
 def make_loader(dataset, cfg, *, train=False, epoch=0):
-    # 每个 epoch 独立确定 shuffle/worker 随机性，断点续训不依赖旧 worker 状态。
     generator = torch.Generator().manual_seed(cfg["seed"] * 100000 + epoch)
     return DataLoader(dataset, batch_size=cfg["batch_size"], shuffle=train,
                       num_workers=cfg["workers"], pin_memory=cfg["device"].startswith("cuda"),

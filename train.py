@@ -1,5 +1,3 @@
-"""一个训练入口：配置 -> 数据 -> 学生/冻结教师 -> 训练 -> 验证选择 -> 测试。"""
-
 import argparse
 import csv
 import hashlib
@@ -205,7 +203,6 @@ def write_history(path, history):
 
 
 def run(config, *, stop_after=None):
-    """自动续训/复用相同配置；不同配置不能覆盖已有实验。stop_after 用于续训测试。"""
     cfg = default_config(config.get("dataset", "mnist")) | config
     unknown = set(cfg) - set(default_config())
     if unknown:
@@ -271,7 +268,6 @@ def run(config, *, stop_after=None):
     for epoch in range(start, cfg["epochs"]):
         tick = time.perf_counter()
         model.train()
-        # 每轮重新设种子，使增强、dropout 和断点续训可复现。
         seed_everything(cfg["seed"] * 100000 + epoch + 1, cfg["deterministic"])
         sums = torch.zeros(4, device=device)
         lr = optimizer.param_groups[0]["lr"]
@@ -343,10 +339,9 @@ def run(config, *, stop_after=None):
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description="Train, validate, and test a model from a run configuration.")
     parser.add_argument("--dataset", choices=["mnist", "cifar10", "cifar100"], default="mnist")
     parser.add_argument("--config", help="Optional JSON config (same keys as default_config)")
-    # 保持单次运行入口简单；完整矩阵由 experiments.py 生成。
     for name in ("model", "method", "teacher", "teacher-model", "teacher-source", "teacher-training-data",
                  "out", "data-root", "device", "profile", "selection"):
         parser.add_argument("--" + name)
@@ -359,7 +354,6 @@ def main():
     path = args.pop("config")
     no_download = args.pop("no_download")
     loaded = json.loads(Path(path).read_text(encoding="utf-8")) if path else {}
-    # --config 可直接使用运行目录里的 config.json。
     loaded = loaded.get("config", loaded)
     dataset = loaded.get("dataset", args["dataset"])
     cfg = default_config(dataset) | loaded

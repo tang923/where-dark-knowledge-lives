@@ -1,5 +1,3 @@
-"""只保留 proposal 中的两类模型；CIFAR ResNet 的键名兼容 mdistiller。"""
-
 import torch
 from torch import nn
 from torch.nn import functional as F
@@ -69,7 +67,6 @@ def make_model(name, classes):
 
 @torch.no_grad()
 def complexity(model, shape):
-    """单张图：Conv/Linear 的 MACs；FLOPs=2*MACs，不含 BN/激活/池化。"""
     macs = 0
 
     def count(module, inputs, output):

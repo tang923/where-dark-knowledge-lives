@@ -1,5 +1,3 @@
-"""检查汇总用真实 seed 数、样本标准差，并验证 CIFAR-10 配对差值。"""
-
 import csv
 import json
 from pathlib import Path
