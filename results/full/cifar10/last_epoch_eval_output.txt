@@ -1,0 +1,30 @@
+ce_seed0         best-val ckpt (ep 240): 0.9344  last epoch: 0.9344  diff 0.0 pp
+ce_seed1         best-val ckpt (ep 207): 0.9337  last epoch: 0.9347  diff 0.1 pp
+ce_seed2         best-val ckpt (ep 237): 0.937  last epoch: 0.9367  diff -0.03 pp
+kd_seed0         best-val ckpt (ep 183): 0.9364  last epoch: 0.9358  diff -0.06 pp
+kd_seed1         best-val ckpt (ep 157): 0.9333  last epoch: 0.9366  diff 0.33 pp
+kd_seed2         best-val ckpt (ep 230): 0.9371  last epoch: 0.9369  diff -0.02 pp
+
+=== Summary: test accuracy (%) ===
+ce     n=3  best-val ckpt: 93.50 +- 0.17    last epoch: 93.53 +- 0.13
+kd     n=3  best-val ckpt: 93.56 +- 0.20    last epoch: 93.64 +- 0.06
+
+=== Paired differences, last epoch (pp) ===
+kd-ce: seeds [0, 1, 2] diffs [0.14, 0.19, 0.02]  mean +0.12 +- 0.09  t=2.31  p=0.1468
+
+Wrote D:\Desktop_D\CE-Homework\Final\ece661project-main\runs_local\full\cifar10\last_epoch_eval.csv
+ce_seed0         best-val ckpt (ep 240): 0.9344  last epoch: 0.9344  diff 0.0 pp
+ce_seed1         best-val ckpt (ep 207): 0.9337  last epoch: 0.9347  diff 0.1 pp
+ce_seed2         best-val ckpt (ep 237): 0.937  last epoch: 0.9367  diff -0.03 pp
+kd_seed0         best-val ckpt (ep 183): 0.9364  last epoch: 0.9358  diff -0.06 pp
+kd_seed1         best-val ckpt (ep 157): 0.9333  last epoch: 0.9366  diff 0.33 pp
+kd_seed2         best-val ckpt (ep 230): 0.9371  last epoch: 0.9369  diff -0.02 pp
+
+=== Summary: test accuracy (%) ===
+ce     n=3  best-val ckpt: 93.50 +- 0.17    last epoch: 93.53 +- 0.13
+kd     n=3  best-val ckpt: 93.56 +- 0.20    last epoch: 93.64 +- 0.06
+
+=== Paired differences, last epoch (pp) ===
+kd-ce: seeds [0, 1, 2] diffs [0.14, 0.19, 0.02]  mean +0.12 +- 0.09  t=2.31  p=0.1468
+
+Wrote D:\Desktop_D\CE-Homework\Final\ece661project-main\runs_local\full\cifar10\last_epoch_eval.csv

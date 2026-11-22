@@ -1,0 +1,10 @@
+﻿dataset,profile,comparison,protocol,variant,seeds,n,mean,std,note
+mnist,pilot,mnist_full,eb70180fec26,ce_full,0,1,0.88,,single-seed exploratory
+mnist,pilot,mnist_omitted_2,4cd978526d4c,ce_omit2,0,1,0.812,,single-seed exploratory
+mnist,pilot,mnist_temperature,548c0719b4ce,kd_full_T1,0,1,0.87,,single-seed exploratory
+mnist,pilot,mnist_temperature,548c0719b4ce,kd_full_T20,0,1,0.897,,single-seed exploratory
+mnist,pilot,mnist_temperature,548c0719b4ce,kd_full_T2,0,1,0.899,,single-seed exploratory
+mnist,pilot,mnist_temperature,548c0719b4ce,kd_full_T4,0,1,0.905,,single-seed exploratory
+mnist,pilot,mnist_temperature,548c0719b4ce,kd_full_T8,0,1,0.897,,single-seed exploratory
+mnist,pilot,mnist_omitted_2,4cd978526d4c,kd_omit2,0,1,0.878,,single-seed exploratory
+mnist,pilot,mnist_teacher,7f17c22e2009,teacher,0,1,0.886,,single-seed exploratory

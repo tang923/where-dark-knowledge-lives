@@ -1,0 +1,4 @@
+run,variant,seed,selected_epoch,best_val_ckpt_test,last_epoch_test,last_epoch_val,diff_pp
+kd_official_seed0,kd,0,210,0.7048,0.7084,0.7376,0.36
+kd_official_seed1,kd,1,217,0.7017,0.7051,0.7324,0.34
+kd_official_seed2,kd,2,215,0.7027,0.7051,0.7346,0.24

@@ -1,0 +1,70 @@
+{
+  "teacher_sha256": "96be6cb99c51dca800b3b85e825a8577febf2ad48d74773b93969602c895889f",
+  "temperature": 2.0,
+  "per_seed": [
+    {
+      "seed": 0,
+      "ce": 0.9821,
+      "kd": 0.987,
+      "delta_pp": 0.49000000000000155,
+      "initial_hash_match": false,
+      "ce_result": "colab\\mnist-20261116T235541Z-1-001\\mnist\\ce_full_seed0\\result.json",
+      "ce_environment": {
+        "torch": "2.14.1+cu130",
+        "cuda": "13.0",
+        "device": "Tesla T4"
+      },
+      "kd_environment": {
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+      }
+    },
+    {
+      "seed": 1,
+      "ce": 0.982,
+      "kd": 0.9861,
+      "delta_pp": 0.40999999999999925,
+      "initial_hash_match": true,
+      "ce_result": "runs\\local_full\\mnist_strong\\weak\\ce_full_seed1\\result.json",
+      "ce_environment": {
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+      },
+      "kd_environment": {
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+      }
+    },
+    {
+      "seed": 2,
+      "ce": 0.9815,
+      "kd": 0.987,
+      "delta_pp": 0.5499999999999949,
+      "initial_hash_match": true,
+      "ce_result": "runs\\local_full\\mnist_strong\\weak\\ce_full_seed2\\result.json",
+      "ce_environment": {
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+      },
+      "kd_environment": {
+        "torch": "2.11.0+cu128",
+        "cuda": "12.8",
+        "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+      }
+    }
+  ],
+  "delta_summary": {
+    "all_seeds": {
+      "mean_delta_pp": 0.4833333333333319,
+      "std_delta_pp": 0.07023769168568299
+    },
+    "matching_initialization": {
+      "mean_delta_pp": 0.4799999999999971,
+      "std_delta_pp": 0.0989949493661136
+    }
+  }
+}

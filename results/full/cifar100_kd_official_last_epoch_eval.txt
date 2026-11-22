@@ -1,0 +1,10 @@
+kd_official_seed0 best-val ckpt (ep 210): 0.7048  last epoch: 0.7084  diff 0.36 pp
+kd_official_seed1 best-val ckpt (ep 217): 0.7017  last epoch: 0.7051  diff 0.34 pp
+kd_official_seed2 best-val ckpt (ep 215): 0.7027  last epoch: 0.7051  diff 0.24 pp
+
+=== Summary: test accuracy (%) ===
+kd     n=3  best-val ckpt: 70.31 +- 0.16    last epoch: 70.62 +- 0.19
+
+=== Paired differences, last epoch (pp) ===
+
+Wrote D:\Desktop_D\CE-Homework\Final\ece661project-main\runs_public_teacher\full\cifar100_kd_official\last_epoch_eval.csv

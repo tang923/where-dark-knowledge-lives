@@ -1,0 +1,2 @@
+﻿dataset,profile,comparison,protocol,variant,seeds,n,mean,std,note
+cifar100,full,cifar100_components,00b93382f085,kd,0 1 2,3,0.7030666666666666,0.0015821925715074378,mean +/- sample SD

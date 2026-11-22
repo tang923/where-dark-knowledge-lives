@@ -1,0 +1,4 @@
+﻿dataset,profile,comparison,protocol,variant,seed,accuracy,validation,omitted_recall,other_accuracy,parameters,flops,seconds,selected_epoch,temperature,alpha,beta,ce_weight,distill_weight,teacher_sha
+cifar100,full,cifar100_components,00b93382f085,kd,0,0.7048,0.742,,,278324,81637888,6923.814644799975,210,4.0,1.0,2.0,0.1,0.9,20c875024f52cd265383eec6c912a1f3d6d92049004e09d484e148af9dde7552
+cifar100,full,cifar100_components,00b93382f085,kd,1,0.7017,0.7354,,,278324,81637888,6622.984964300063,217,4.0,1.0,2.0,0.1,0.9,20c875024f52cd265383eec6c912a1f3d6d92049004e09d484e148af9dde7552
+cifar100,full,cifar100_components,00b93382f085,kd,2,0.7027,0.7392,,,278324,81637888,6664.142244000053,215,4.0,1.0,2.0,0.1,0.9,20c875024f52cd265383eec6c912a1f3d6d92049004e09d484e148af9dde7552

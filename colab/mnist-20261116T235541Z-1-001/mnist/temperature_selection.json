@@ -1,0 +1,34 @@
+{
+  "rule": "highest full-transfer validation accuracy; first T breaks ties",
+  "temperature": 2.0,
+  "seed": 0,
+  "omitted_digit": 2,
+  "omit_seed": 661,
+  "candidates": [
+    {
+      "fingerprint": "a760c269ef7c6b9c992867331dc39bd35ff2b83f20b7a7fb04ec48cc574711a6",
+      "temperature": 1.0,
+      "validation": 0.983822548365577
+    },
+    {
+      "fingerprint": "e69a892a952e1688af7caf2fd33f1fb5b0d38f0dac00e75cf6505c9da0ce0656",
+      "temperature": 2.0,
+      "validation": 0.9844896597731821
+    },
+    {
+      "fingerprint": "0bac39ee20677d6c33a8b1eb69d4db5921de62d2fe1e446f4e0200fe97842376",
+      "temperature": 4.0,
+      "validation": 0.983822548365577
+    },
+    {
+      "fingerprint": "39b12e099faf73c0b0be79747968b2577f811c6415a2da736befadc7dfd4c9b5",
+      "temperature": 8.0,
+      "validation": 0.9833222148098733
+    },
+    {
+      "fingerprint": "09cb91f6eeb2a54a24d9754fbfb3c406ee5d0f0c12019935743ffc535144af96",
+      "temperature": 20.0,
+      "validation": 0.983822548365577
+    }
+  ]
+}

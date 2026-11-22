@@ -1,0 +1,7 @@
+run,variant,seed,selected_epoch,best_val_ckpt_test,last_epoch_test,last_epoch_val,diff_pp
+ce_seed0,ce,0,240,0.9344,0.9344,0.9428,0.0
+ce_seed1,ce,1,207,0.9337,0.9347,0.9402,0.1
+ce_seed2,ce,2,237,0.937,0.9367,0.9378,-0.03
+kd_seed0,kd,0,183,0.9364,0.9358,0.943,-0.06
+kd_seed1,kd,1,157,0.9333,0.9366,0.935,0.33
+kd_seed2,kd,2,230,0.9371,0.9369,0.9394,-0.02

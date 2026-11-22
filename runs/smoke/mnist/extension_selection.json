@@ -1,0 +1,32 @@
+{
+  "temperature": 1.0,
+  "alpha": 1.0,
+  "beta": 4.0,
+  "omitted_digit": 2,
+  "omit_seed": 661,
+  "ce_weight": 1.0,
+  "distill_weight": 1.0,
+  "selection": "final epoch on omitted transfer; no test-based tuning",
+  "candidates": [
+    {
+      "beta": 1.0,
+      "fingerprint": "a4baa73f6038c6ecf7f042b6587ae43a71423549dfb9c53b22c3d2113ed1219e",
+      "validation": 0.09
+    },
+    {
+      "beta": 2.0,
+      "fingerprint": "90ec4d05ad3d40ce3001ce94ad70d1b49faca5dd58d94c724d365911ad871236",
+      "validation": 0.11
+    },
+    {
+      "beta": 4.0,
+      "fingerprint": "02bccc1fae8a0fcfe762d7d3caf041af5bcb134fdad09a8580a5626040204a12",
+      "validation": 0.13
+    },
+    {
+      "beta": 8.0,
+      "fingerprint": "9825a5ad4cb971cee7c38f79506cf6b1325e733d60732ec42acb386a6a471e12",
+      "validation": 0.12
+    }
+  ]
+}

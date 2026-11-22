@@ -1,0 +1,164 @@
+{
+  "teacher": "teacher_shift2_seed0",
+  "teacher_sha256": "96be6cb99c51dca800b3b85e825a8577febf2ad48d74773b93969602c895889f",
+  "teacher_fingerprint": "1bca85a7eb8609cc3b0b67356c54f4723bf94a6dd32a1fd3282b28679d9009c5",
+  "selected_epoch": 52,
+  "selection": "Higher validation accuracy of the two completed teacher recipes",
+  "validation_by_recipe": {
+    "teacher_shift2_seed0": 0.9893262174783188,
+    "teacher_seed0": 0.9879919946631087
+  },
+  "temperature": 2.0,
+  "data": {
+    "train_size": 54004,
+    "val_size": 5996,
+    "test_size": 10000,
+    "train_hash": "5aed22bcefb218ff0013886b399f47ad40cbdc3216c82402df3208d5a64f380d",
+    "val_hash": "711b84ea4b33709523953436729a0455f0cfddda22061ca1b8c88fcf75fcb0d5",
+    "test_hash": "9e1c19b3fdc185411bd1a987deb6a9fda2531116aac060a84c4d878854d1c099",
+    "full_train_hash": "5aed22bcefb218ff0013886b399f47ad40cbdc3216c82402df3208d5a64f380d",
+    "train_classes": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ]
+  },
+  "test": {
+    "accuracy": 0.9901,
+    "count": 10000,
+    "confusion_matrix": [
+      [
+        975,
+        0,
+        0,
+        0,
+        0,
+        0,
+        3,
+        1,
+        1,
+        0
+      ],
+      [
+        0,
+        1133,
+        1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        1024,
+        0,
+        1,
+        0,
+        0,
+        3,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1002,
+        0,
+        2,
+        0,
+        1,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        971,
+        0,
+        3,
+        1,
+        0,
+        7
+      ],
+      [
+        2,
+        0,
+        0,
+        7,
+        1,
+        877,
+        2,
+        1,
+        0,
+        2
+      ],
+      [
+        1,
+        2,
+        0,
+        0,
+        2,
+        2,
+        950,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        2,
+        7,
+        0,
+        1,
+        0,
+        0,
+        1012,
+        2,
+        4
+      ],
+      [
+        2,
+        0,
+        1,
+        1,
+        0,
+        1,
+        1,
+        2,
+        965,
+        1
+      ],
+      [
+        0,
+        1,
+        0,
+        3,
+        7,
+        0,
+        0,
+        4,
+        2,
+        992
+      ]
+    ]
+  },
+  "environment": {
+    "torch": "2.11.0+cu128",
+    "cuda": "12.8",
+    "device": "NVIDIA GeForce RTX 4070 Laptop GPU"
+  }
+}

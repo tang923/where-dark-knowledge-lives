@@ -1,0 +1,36 @@
+﻿dataset,profile,comparison,protocol,variant,seeds,n,mean,std,note
+cifar10,smoke,cifar10_reversed,09a7e7bf78e2,ce,0 1 2,3,0.1,0.0,mean +/- sample SD
+cifar10,smoke,cifar10_reversed,09a7e7bf78e2,kd,0 1 2,3,0.1,0.0,mean +/- sample SD
+cifar10,smoke,cifar10_teacher,3ef2da73ebf2,teacher,0,1,0.15,,single-seed exploratory
+cifar100,smoke,cifar100_components,42b8d541e42a,ce,0 1 2,3,0.0033333333333333335,0.005773502691896258,mean +/- sample SD
+cifar100,smoke,cifar100_components,42b8d541e42a,dkd,0 1 2,3,0.01,0.0,mean +/- sample SD
+cifar100,smoke,cifar100_components,42b8d541e42a,kd,0 1 2,3,0.01,0.0,mean +/- sample SD
+cifar100,smoke,cifar100_components,42b8d541e42a,nckd,0,1,0.01,,single-seed exploratory
+cifar100,smoke,cifar100_components,42b8d541e42a,tckd,0,1,0.01,,single-seed exploratory
+cifar100,smoke,cifar100_teacher,b97f4cee2482,teacher,0,1,0.0,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,ce_full,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,ce_omit2,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,dkd_full_b1,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,dkd_full_b2,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,dkd_full_b4,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,dkd_full_b8,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_noce_omit2_b1,0,1,0.09,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_noce_omit2_b2,0,1,0.12,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_noce_omit2_b4,0,1,0.12,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_noce_omit2_b8,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_omit2_b1,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_omit2_b2,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_omit2_b4,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,dkd_omit2_b8,0,1,0.15,,single-seed exploratory
+mnist,smoke,mnist_temperature,96f4685f47e3,kd_full_T1,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_temperature,96f4685f47e3,kd_full_T20,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_temperature,96f4685f47e3,kd_full_T2,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_temperature,96f4685f47e3,kd_full_T4,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_temperature,96f4685f47e3,kd_full_T8,0,1,0.14,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,kd_noce_omit2,0,1,0.09,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,kd_omit2,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,nckd_full_b4,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,nckd_omit2_b4,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_full,c5e09927015d,tckd_full,0,1,0.13,,single-seed exploratory
+mnist,smoke,mnist_omitted_2,34a6dd40fd70,tckd_omit2,0,1,0.11,,single-seed exploratory
+mnist,smoke,mnist_teacher,c4e98fad0954,teacher,0,1,0.18,,single-seed exploratory
