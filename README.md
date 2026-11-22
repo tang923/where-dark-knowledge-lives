@@ -163,17 +163,6 @@ On Windows PowerShell, set `$env:PYTHONPATH="."` instead of the `PYTHONPATH=.` p
 - **Pairing.** Within a seed, all students of an architecture start from
   identical weights (checked by hash) and see the same data order.
 
-## Limitations
-
-- The public CIFAR-100 teacher was trained on our validation images, so we
-  report final-epoch results there.
-- Runs used three GPU types (RTX 5070 Ti laptop, RTX 4070 laptop, Colab T4);
-  every paired comparison uses a single type, except seed 0 of the
-  strong-teacher MNIST comparison.
-- This is a matched comparison, not an exact reproduction of DKD's Table 1:
-  we use an independent validation split, equal cross-entropy weights, and a
-  shared warmup.
-
 ## References
 
 - G. Hinton, O. Vinyals, J. Dean. *Distilling the Knowledge in a Neural Network.* arXiv:1503.02531, 2015.
