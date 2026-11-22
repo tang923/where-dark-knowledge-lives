@@ -1,5 +1,3 @@
-"""Proposal 的实验清单。先看 --dry-run，再按 track 运行；中断后重跑同一命令即可。"""
-
 import argparse
 from pathlib import Path
 import random
@@ -119,7 +117,6 @@ class Experiments:
         for method in ("ce", "kd", "tckd"):
             self.method(omitted, method, f"{method}_omit{self.omit}")
         self.method(omitted, "nckd", f"nckd_omit{self.omit}_b{beta:g}", beta=beta)
-        # beta 扫描是预先规定的敏感性分析，不用缺失类测试准确率挑选赢家。
         for b in betas:
             self.method(omitted, "dkd", f"dkd_omit{self.omit}_b{b:g}", beta=b)
         self.method(omitted, "kd", f"kd_noce_omit{self.omit}", ce_weight=0.0)
@@ -128,7 +125,7 @@ class Experiments:
 
 
 def main():
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description="Run the planned experiments. Use --dry-run to preview the run matrix.")
     parser.add_argument("--track", choices=["mnist", "cifar10", "cifar100", "extension", "all"], required=True)
     parser.add_argument("--profile", choices=["smoke", "pilot", "full"], default="full")
     parser.add_argument("--seeds", type=int, nargs="+", default=[0], help="CIFAR: later seeds repeat principal comparisons only")

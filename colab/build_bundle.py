@@ -1,5 +1,3 @@
-"""生成无需 GitHub 仓库即可使用的 Colab notebook 和轻量代码包。"""
-
 import argparse
 import hashlib
 import json
@@ -84,7 +82,7 @@ def build_notebook():
         '''),
         cell("markdown", "## 2. 定义运行入口，并检查核心代码（每次新会话重跑）"),
         cell("code", '''
-        WORKERS = 2  # 同一批实验保持不变；Colab 使用两个数据加载进程。
+        WORKERS = 2
 
         def run_track(track, profile="full", seeds=(0,), dry_run=False):
             command = [sys.executable, "-u", "experiments.py", "--track", track,
@@ -200,7 +198,7 @@ def build_notebook():
 def build_bundle():
     names = ["data.py", "models.py", "losses.py", "train.py", "experiments.py", "report.py",
              "mnist_followup.py",
-             "requirements.txt", "README.md", "DEFENSE.md", "VALIDATION.md", "THIRD_PARTY.md", "COLAB.md",
+             "requirements.txt", "README.md", "VALIDATION.md", "THIRD_PARTY.md", "COLAB.md",
              "tests/test_core.py", "tests/test_report.py"]
     manifest = {"sha256": {name: hashlib.sha256((ROOT / name).read_bytes()).hexdigest() for name in names}}
     with zipfile.ZipFile(OUT / "kd_colab.zip", "w", zipfile.ZIP_DEFLATED) as bundle:
@@ -211,7 +209,7 @@ def build_bundle():
 
 
 if __name__ == "__main__":
-    parser = argparse.ArgumentParser(description=__doc__)
+    parser = argparse.ArgumentParser(description="Build the Colab notebook and code bundle.")
     parser.add_argument("--bundle-only", action="store_true", help="Keep the existing notebook")
     args = parser.parse_args()
     if not args.bundle_only:

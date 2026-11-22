@@ -1,5 +1,3 @@
-"""检验公式、数据隔离、指标和断点续训；不下载数据、不占 GPU。"""
-
 from pathlib import Path
 import tempfile
 import unittest
