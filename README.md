@@ -171,5 +171,4 @@ On Windows PowerShell, set `$env:PYTHONPATH="."` instead of the `PYTHONPATH=.` p
 
 ## License
 
-Released under the MIT License (see `LICENSE`). Third-party sources and
-checkpoints are attributed in `THIRD_PARTY.md`.
+Released under the [MIT License](LICENSE). Third-party sources and checkpoints are attributed in [THIRD_PARTY.md](THIRD_PARTY.md).
